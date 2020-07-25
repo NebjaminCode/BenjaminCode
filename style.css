@@ -67,3 +67,89 @@ h2 {
 h3 {
     font-size: var(--fs-h3);
 }
+
+.section__title {
+    font-weight: var(--fw-reg);
+    font-size: var(--fs-h2)
+}
+
+.section__title--intro {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h1)
+}
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro {
+    background: var(--clr-accent);
+}
+
+/* header */
+
+nav {
+    display: none;
+}
+
+#site_logo {
+    width: 65px;
+}
+
+/* intro section */
+/* please note: the mess of intro divs&sections is caused by me trying to avoid using SVGs for dividers while retaining the functionality and look of the intro content*/
+
+#top_color_block {
+    background: grey;
+    height: 100px;
+    width: 100%;
+    margin-top: -100px;
+}
+
+#intro__container {
+    background: grey;
+    padding-top: 2em;
+}
+
+.intro {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 2em;
+}
+
+#intro_divider {
+    background: grey;
+    width: 100%;
+    height: 40px;
+    z-index: 0;
+    transform: skewY(-2deg);
+    transform-origin: top left;
+    margin-bottom: 1em;
+}
+
+@media (min-width: 600px) {
+    .intro {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas: 
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+
+    .intro__img {
+        grid-area: img;
+        min-width: 250px;
+    }
+
+    .section__subtitle--intro {
+        align-self: start;
+        grid-column: -1/1;
+        grid-row: 2;
+        text-align: right;
+    }
+}

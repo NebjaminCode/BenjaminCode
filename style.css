@@ -79,6 +79,14 @@ h3 {
     margin: 0;
 }
 
+h4 {
+    line-height: 1;
+    margin: 0;
+    margin-top: .6em;
+    font-weight: 100;
+    font-size: .8rem;
+}
+
 h1 { font-size: var(--fs-h1); }
 h2 { font-size: var(--fs-h2); }
 h3 { font-size: var(--fs-h3); }
@@ -119,6 +127,7 @@ nav {
 
 .intro__img {
     box-shadow: var(--bs);
+    border-radius: 50%;
 }
 
 /* intro section */
@@ -217,7 +226,7 @@ nav {
 /* About */
 
 .about {
-    margin-top: 1em;
+    margin-top: 2em;
     min-height: 15em;
 }
 
@@ -269,6 +278,7 @@ nav {
 @media (min-width: 700px) {
     .work_experience_columns {
         display: grid;
+        width: 1fr;
         grid-column-gap: 1em;
         grid-template-areas:
             "img img img"

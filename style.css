@@ -43,12 +43,12 @@ html {
     width: 100%;
     height: 100%;
     margin: auto;
-    max-width: 1100px;
+    max-width: 2500px;
 }
 
 .body_content {
     margin: auto;
-    max-width: 1100px;
+    max-width: 2500px;
 }
 
 body {
@@ -58,10 +58,12 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.4;
+    overflow-x: hidden;
 }
 
 section {
     padding: 5em 2em;
+    margin-top: 3em;
 }
 
 img {
@@ -209,5 +211,139 @@ nav {
         width: calc(100% + 2em);
         margin-top: .1em;
         padding-right: .5em;
+    }
+}
+
+/* About */
+
+.about {
+    margin-top: 1em;
+    min-height: 15em;
+}
+
+/* Work Experience */
+
+.work_experience {
+    background: grey;
+    color: var(--clr-light);
+    text-align: center;
+    display: block;
+    padding-top: 3em;
+    padding-bottom: 5em;
+}
+
+.work_experience--job {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.103);
+    padding: 1em;
+    margin-top: 1.5em;
+}
+
+.job_img_container {
+    top: 0;
+    display: flex;
+}
+
+.job_img {
+    width: 50%;   
+    margin: auto;
+}
+
+#job_img_short {
+    width: 75%;
+}
+
+.job_desc {
+    bottom: 0;
+}
+
+/* Media queries to keep job image/description aligned */
+/* Note to self: fix this! There has GOT to be a better way to manage grid alignment! */
+
+@media (max-width: 700px) {
+    .job_title {
+        margin-top: 1em;
+    }
+}
+
+@media (min-width: 700px) {
+    .work_experience_columns {
+        display: grid;
+        grid-column-gap: 1em;
+        grid-template-areas:
+            "img img img"
+            "desc desc desc";
+    }
+
+    .job_img_container {
+        height: 7rem;
+    }
+
+    .job_img {
+        grid-area: img;
+    }
+
+    .job_desc {
+        grid-area: desc;
+        min-height: 10rem;
+
+    }
+}
+
+@media (min-width: 800px) {
+    .job_img_container {
+        height: 7rem;
+    }
+
+    #work_experience_title {
+        padding-bottom: .5em;
+    }
+}
+
+@media (min-width: 900px) {
+    .job_img_container {
+        height: 9rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .job_img_container {
+        height: 10rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    .job_img_container {
+        height: 11.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .job_img_container {
+        height: 13rem;
+    }
+}
+
+@media (min-width: 1350px) {
+    .job_img_container {
+        height: 14rem;
+    }
+}
+
+@media (min-width: 1500px) {
+    .job_img_container {
+        height: 14.5rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .job_img_container {
+        height: 17rem;
+    }
+}
+
+@media (min-width: 1700px) {
+    .job_img_container {
+        height: 19.4rem;
     }
 }

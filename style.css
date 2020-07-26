@@ -226,8 +226,23 @@ nav {
 /* About */
 
 .about {
-    margin-top: 2em;
+    margin: auto;
+    margin-top: 1em;
     min-height: 15em;
+    width: 80%;
+    margin-bottom: 3em;
+}
+
+#about_divider {
+    background: grey;
+    width: 500%;
+    height: 80px;
+    z-index: -10;
+    transform: skewY(-2deg);
+    transform-origin: top left;
+    margin-left: -40em;
+    margin-top: 1em;
+    margin-bottom: -5.1em;
 }
 
 /* Work Experience */
@@ -239,6 +254,7 @@ nav {
     display: block;
     padding-top: 3em;
     padding-bottom: 5em;
+    margin-top: 0em;
 }
 
 .work_experience--job {
@@ -246,6 +262,8 @@ nav {
     background: rgba(0, 0, 0, 0.103);
     padding: 1em;
     margin-top: 1.5em;
+    box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.15),
+    0.125em 0.125em 0.25em rgba(0,0,0,.1);
 }
 
 .job_img_container {

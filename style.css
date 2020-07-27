@@ -391,3 +391,19 @@ nav {
         height: 19.4rem;
     }
 }
+
+/* Skills */
+
+.skills {
+    background: gray;
+    color: var(--clr-light)
+}
+
+/* Footer */
+
+#bottom_bar {
+    content: "";
+    height: 75px;
+    width: 100%;
+    background: var(--clr-accent)
+}

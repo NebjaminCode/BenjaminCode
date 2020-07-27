@@ -392,6 +392,18 @@ nav {
     }
 }
 
+/* Projects */
+
+.projects {
+    width: 80%;
+    margin: auto;
+}
+
+.project_caro {
+    display: flex;
+    margin: auto;
+}
+
 /* Skills */
 
 .skills {

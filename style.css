@@ -266,6 +266,15 @@ nav {
     0.125em 0.125em 0.25em rgba(0,0,0,.1);
 }
 
+#bar {
+    content: "";
+    height: 1px;
+    width: 55%;
+    background: white;
+    margin: auto;
+    margin-top: .5em;
+}
+
 .job_img_container {
     top: 0;
     display: flex;

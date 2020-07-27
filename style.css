@@ -169,6 +169,7 @@ nav {
     margin-bottom: 1em;
     margin-left: -40em;
     margin-top: 1em;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.192);
 }
 
 @media (min-width: 300px) {
@@ -243,6 +244,7 @@ nav {
     margin-left: -40em;
     margin-top: 1em;
     margin-bottom: -5.1em;
+    box-shadow: 0px -20px 20px 0px rgba(0, 0, 0, 0.192);
 }
 
 /* Work Experience */
@@ -255,6 +257,11 @@ nav {
     padding-top: 3em;
     padding-bottom: 5em;
     margin-top: 0em;
+}
+
+#work_experience_subtitle {
+    font-weight: 1;
+    margin-top: -.5em;
 }
 
 .work_experience--job {

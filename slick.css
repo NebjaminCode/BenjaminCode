@@ -121,9 +121,9 @@
 
 .slick-next, .slick-prev {
     width: 30px;
-    height: 25%;
+    height: 3em;
     border: none;
-    margin-top: 4.5em;
+    margin-top:10%;
 }
 
 .slick-prev {

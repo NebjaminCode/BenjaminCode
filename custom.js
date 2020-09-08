@@ -1,10 +1,11 @@
 $(document).ready(function(){
     $('.project_caro').slick({
-        dots: true,
+        dots: false,
+        centerMode: true,
         infinite: true,
         speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         responsive: [
           {
             breakpoint: 1024,
@@ -12,7 +13,7 @@ $(document).ready(function(){
               slidesToShow: 3,
               slidesToScroll: 3,
               infinite: true,
-              dots: true
+              dots: false
             }
           },
           {
@@ -32,8 +33,7 @@ $(document).ready(function(){
           // You can unslick at a given breakpoint now by adding:
           // settings: "unslick"
           // instead of a settings object
-        ]
+        ],
+        
       });
   });
-
-  

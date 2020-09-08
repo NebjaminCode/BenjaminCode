@@ -3,7 +3,7 @@
 {
     position: relative;
 
-    display: block;
+    display: relative;
     box-sizing: border-box;
 
     -webkit-user-select: none;
@@ -64,6 +64,7 @@
     display: table;
 
     content: '';
+    
 }
 .slick-track:after
 {
@@ -116,4 +117,19 @@
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+.slick-next, .slick-prev {
+    width: 30px;
+    height: 25%;
+    border: none;
+    margin-top: 4.5em;
+}
+
+.slick-prev {
+    margin-right: 1em;
+}
+
+.slick-next {
+    margin-left: 1em;
 }

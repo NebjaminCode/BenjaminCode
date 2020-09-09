@@ -339,8 +339,8 @@ nav {
     }
 
     #work_experience_title {
-        margin-top: -.7em;
-        padding-bottom: .5em;
+        margin-top: -.8em;
+        padding-bottom: 0em;
     }
 }
 
@@ -396,6 +396,7 @@ nav {
 
 #project_title {
     line-height: 2em;
+    margin-bottom: -.4em;
 }
 
 .projects {
